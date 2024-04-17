@@ -1,4 +1,5 @@
 ﻿using ECommerceSite.Infrastructure.Data.Models;
+using ECommerceSite.Infrastructure.SeedDataBase;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -12,12 +13,18 @@ namespace ECommerceSite.Infrastructure
     public class EcommerceSiteDbContext : IdentityDbContext
     {
         public EcommerceSiteDbContext(DbContextOptions<EcommerceSiteDbContext> options)
-            :base(options)
+            : base(options)
         {
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.ApplyConfiguration(new BrandConfiguration());
+            builder.ApplyConfiguration(new ProductConfiguration());
+            builder.ApplyConfiguration(new ColorConfiguration());
+            builder.ApplyConfiguration(new SizeConfiguration());
+            builder.ApplyConfiguration(new CategoryConfiguration());
+
             base.OnModelCreating(builder);
         }
 
@@ -28,6 +35,5 @@ namespace ECommerceSite.Infrastructure
         public DbSet<Color> Colors { get; set; }
         public DbSet<Size> Sizes { get; set; }
         public DbSet<User> Users { get; set; }
-
     }
 }
