@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcommerceSite", "EcommerceSite\EcommerceSite.csproj", "{E787850C-C526-4250-9513-919A8347C8C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcommerceSite", "EcommerceSite\EcommerceSite.csproj", "{E787850C-C526-4250-9513-919A8347C8C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerceSite.Core", "ECommerceSite.Core\ECommerceSite.Core.csproj", "{08379BFA-2FC8-4DBE-8971-81F0DBC2B794}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcommerceSite.Core", "ECommerceSite.Core\EcommerceSite.Core.csproj", "{08379BFA-2FC8-4DBE-8971-81F0DBC2B794}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerceSite.Infrastructure", "ECommerceSite.Infrastructure\ECommerceSite.Infrastructure.csproj", "{F6057B8A-CD40-484D-9DCC-25367506DD5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcommerceSite.Infrastructure", "ECommerceSite.Infrastructure\EcommerceSite.Infrastructure.csproj", "{F6057B8A-CD40-484D-9DCC-25367506DD5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
