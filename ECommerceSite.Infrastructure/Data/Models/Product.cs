@@ -24,6 +24,9 @@ namespace ECommerceSite.Infrastructure.Data.Models
         [Required]
         public int Quantity { get; set; }
 
+        [Required]
+        public string ImageUrl { get; set; } = string.Empty;
+
         public int CategoryId { get; set; }
         [ForeignKey(nameof(CategoryId))]
         public Category Category { get; set; } = null!;
@@ -34,7 +37,7 @@ namespace ECommerceSite.Infrastructure.Data.Models
 
         public int SizeId { get; set; }
         [ForeignKey(nameof(SizeId))]
-        public Size Size { get; set; } = null!;  
+        public Size Size { get; set; } = null!;
 
         public int BrandId { get; set; }
         [ForeignKey(nameof(BrandId))]

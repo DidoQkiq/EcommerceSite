@@ -34,5 +34,16 @@ namespace EcommerceSite.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            return View(new ProductDetailsViewModel());
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(int id, ProductDetailsViewModel product)
+        {
+            return View();
+        }
     }
 }
